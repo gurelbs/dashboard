@@ -7,7 +7,7 @@ async function bootstrap() {
   const chalk = (await import('chalk')).default;
 
   await app.listen(PORT, () => console.log(
-    chalk.bold.green(`\nserver is app and running on`,
+    chalk.bold.green(`\nServer is app and running on`,
     chalk.bold.underline.green(`http://localhost:${PORT}.`),
     chalk.hex('#0000ff').italic.bold('Happy coding!')
   )));
