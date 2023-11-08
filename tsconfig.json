@@ -17,6 +17,14 @@
     "noImplicitAny": false,
     "strictBindCallApply": false,
     "forceConsistentCasingInFileNames": false,
-    "noFallthroughCasesInSwitch": false
+    "noFallthroughCasesInSwitch": false,
+    "paths": {  
+      "@controllers/*": ["controllers/*"],
+      "@services/*": ["services/*"],
+      "@config/*": ["config/*"],
+      "@scraper/*": ["scraper/*"],
+      "@assets/*": ["assets/*"],
+      "@fibi/*": ["assets/fibi/*"],
+    },
   }
 }

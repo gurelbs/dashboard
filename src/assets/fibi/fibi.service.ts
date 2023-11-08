@@ -1,9 +1,9 @@
 import { Inject, Injectable } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
-import { GlobalEnv } from 'config/interfaces';
+import { GlobalEnv } from '@config/interfaces';
 import type { Page, Browser } from 'puppeteer';
-import { scraperConfig } from 'scraper/scraper.config';
-import { ScraperService } from 'scraper/scraper.service';
+import { scraperConfig } from '@scraper/scraper.config';
+import { ScraperService } from '@scraper/scraper.service';
 
 @Injectable()
 export class FibiService {

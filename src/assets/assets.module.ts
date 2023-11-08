@@ -1,6 +1,5 @@
 import { Module } from '@nestjs/common';
-import { FibiController } from './fibi/fibi.controller';
-import { FibiService } from './fibi/fibi.service';
+import { FibiController, FibiService } from '@fibi/index';
 
 @Module({
   providers: [FibiService],

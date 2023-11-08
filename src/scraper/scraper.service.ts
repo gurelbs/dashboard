@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import puppeteer, { Browser } from 'puppeteer';
-import { scraperConfig } from './scraper.config';
+import { scraperConfig } from '@scraper/scraper.config';
 
 @Injectable()
 export class ScraperService {
