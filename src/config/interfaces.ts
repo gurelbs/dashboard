@@ -9,13 +9,11 @@ export interface GlobalEnv {
     NODE_ENV: string;
     PORT: number;
     isDev: boolean;
-  },
+  };
   user: {
     email: string;
   };
   assets: {
     fibi: FibiEnv;
-  },
+  };
 }
-
-

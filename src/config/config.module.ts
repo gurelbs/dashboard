@@ -10,7 +10,7 @@ import { ConfigService } from '@nestjs/config';
     {
       provide: ConfigService,
       useValue: config,
-    }
+    },
   ],
   exports: [ConfigService],
 })

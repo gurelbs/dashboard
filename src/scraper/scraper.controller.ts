@@ -1,20 +1,19 @@
 import { Controller, Get } from '@nestjs/common';
-import { ScraperService } from './scraper.service';
-import { ConfigService } from '@nestjs/config';
+import { FibiController } from 'assets/fibi/fibi.controller';
 
-@Controller('scraper')
+@Controller()
 export class ScraperController {
-  constructor(
-    private scraper: ScraperService,
-  ) {}
+  constructor(private fibiController: FibiController) {}
 
-
-  @Get('')
-  links() {
-    return `<a href="/scraper/fibi">fibi</a>`;
-  }
   @Get('fibi')
-  async scrapeFibi() {
-    return await this.scraper.getFibiData();
+  async fetchFibiData() {
+    return await this.fibiController.fibiData();
   }
+
+  // async fetchAssetData(assetName: string) {
+  // }
+
+  // async fetchAll() {
+
+  // }
 }
